@@ -18,4 +18,14 @@ def calculator():
 
         result = 0
 
-       
+        if choice == 1:
+            result = num1 + num2
+        elif choice == 2:
+            result = num1 - num2
+        elif choice == 3:
+            result = num1 * num2
+        elif choice == 4:
+            if num2 != 0:
+                result = num1 / num2
+           
+           
