@@ -1,1 +1,42 @@
-00000000 (Not Committed Yet 2023-06-10 01:35:08 +0300 1) {"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyPxXa82u7sTkcnaCZjSfyu0"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":null,"metadata":{"colab":{"base_uri":"https://localhost:8080/"},"id":"SWfGfy37SCCc","outputId":"204ba0a0-a09c-4625-a413-53ed31115911"},"outputs":[{"output_type":"stream","name":"stdout","text":["Выберите операцию:\n","1. Сложение\n","2. Вычитание\n","3. Умножение\n","4. Деление\n","5. Выйти\n","Введите номер операции: 1\n","Введите первое число: 1\n","Введите второе число: 2\n","Результат: 3.0\n","\n","Выберите операцию:\n","1. Сложение\n","2. Вычитание\n","3. Умножение\n","4. Деление\n","5. Выйти\n"]}],"source":["def calculator():\n","    while True:\n","        print(\"Выберите операцию:\")\n","        print(\"1. Сложение\")\n","        print(\"2. Вычитание\")\n","        print(\"3. Умножение\")\n","        print(\"4. Деление\")\n","        print(\"5. Выйти\")\n","\n","        choice = int(input(\"Ввдите номер операции: \"))\n","\n","        if choice == 5:\n","            print(\"Программа завершена.\")\n","            break\n","\n","        num1 = float(input(\"Введите первое число: \"))\n","        num2 = float(input(\"Введите второе число: \"))\n","\n","        result = 0\n","\n","        if choice == 1:\n","            result = num1 + num2\n","        elif choice == 2:\n","            result = num1 - num2\n","        elif choice == 3:\n","            result = num1 * num2\n","        elif choice == 4:\n","            if num2 != 0:\n","                result = num1 / num2\n","            else:\n","                print(\"Ошибка: деление на ноль\")\n","                continue\n","        else:\n","            print(\"Ошибка: неверный выбор операции\")\n","            continue\n","\n","        print(\"Результат:\", result)\n","        print()\n","\n","calculator()"]}]}
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  1) def calculator():
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  2)     while True:
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  3)         print("Выберите операцию:")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  4)         print("1. Сложение")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  5)         print("2. Вычитание")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  6)         print("3. Умножение")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  7)         print("4. Деление")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  8)         print("5. Выйти")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300  9) 
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 10)         choice = int(input("Введите номер операции: "))
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 11) 
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 12)         if choice == 5:
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 13)             print("Программа завершена.")
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 14)             break
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 15) 
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 16)         num1 = float(input("Введите первое число: "))
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 17)         num2 = float(input("Введите второе число: "))
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 18) 
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 19)         result = 0
+31c9e277 (pyrobombus 2023-06-10 10:53:36 +0300 20) 
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 21)         if choice == 1:
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 22)             result = num1 + num2
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 23)         elif choice == 2:
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 24)             result = num1 - num2
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 25)         elif choice == 3:
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 26)             result = num1 * num2
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 27)         elif choice == 4:
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 28)             if num2 != 0:
+35eede89 (pyrobombus 2023-06-10 10:59:25 +0300 29)                 result = num1 / num2
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 30)             else:
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 31)                 print("Ошибка: деление на ноль")
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 32)                 continue
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 33)         else:
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 34)             print("Ошибка: неверный выбор операции")
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 35)             continue
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 36) 
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 37)         print("Результат:", result)
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 38)         print()
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 39) 
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 40) calculator()
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 41) 
+4e54fad5 (pyrobombus 2023-06-10 10:59:51 +0300 42) 
