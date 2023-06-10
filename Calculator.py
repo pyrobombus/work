@@ -27,5 +27,15 @@ def calculator():
         elif choice == 4:
             if num2 != 0:
                 result = num1 / num2
-          
+            else:
+                print("Ошибка: деление на ноль")
+                continue
+        else:
+            print("Ошибка: неверный выбор операции")
+            continue
+
+        print("Результат:", result)
+        print()
+
+calculator()
 
